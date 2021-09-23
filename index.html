@@ -14,7 +14,22 @@
   <body>
     <h1>Hello, I'm Devin</h1>
     <p>There is nothing in here yet but... soon there will be!</p>
-    <div class="cleanslate w24tz-current-time w24tz-middle" style="display: inline-block !important; visibility: hidden !important; min-width:300px !important; min-height:145px !important;"><p><a href="//24timezones.com/Jakarta/time" style="text-decoration: none" class="clock24" id="tz24-1632353046-c1108-eyJob3VydHlwZSI6IjI0Iiwic2hvd2RhdGUiOiIxIiwic2hvd3NlY29uZHMiOiIwIiwiY29udGFpbmVyX2lkIjoiY2xvY2tfYmxvY2tfY2I2MTRiYmIxNjc1ODI2IiwidHlwZSI6ImRiIiwibGFuZyI6ImVuIn0=" title="Jakarta - Clock" target="_blank" rel="nofollow">Jakarta</a></p><div id="clock_block_cb614bbb1675826"></div></div>
+  <div class="cleanslate w24tz-current-time w24tz-middle" style="display: inline-block !important; visibility: hidden !important; min-width:300px !important; min-height:145px !important;"><p><a href="//24timezones.com/"+id='loc'+"/time" style="text-decoration: none" class="clock24" id="tz24-1632375445-c1108-eyJob3VydHlwZSI6MTIsInNob3dkYXRlIjoiMSIsInNob3dzZWNvbmRzIjoiMSIsImNvbnRhaW5lcl9pZCI6ImNsb2NrX2Jsb2NrX2NiNjE0YzEyOTU4ZGZkYSIsInR5cGUiOiJkYiIsImxhbmciOiJlbiJ9" title="time at "+id='loc' target="_blank" rel="nofollow"><p id='loc'></p></a></p><div id="clock_block_cb614c12958dfda"></div></div>
 <script type="text/javascript" src="//w.24timezones.com/l.js" async></script>
+<br>
+<br>
+<center>
+  <table>
+	  <tr><td style="text-align: center;"><canvas id="canvas_tt614c13aa1ad40" width="175" height="175"></canvas></td></tr>
+    <tr><td style="text-align: center; font-weight: bold"><a href="//24timezones.com/"+id='loc'+"/time" style="text-decoration: none" class="clock24" id="tz24-1632375722-c1108-eyJzaXplIjoiMTc1IiwiYmdjb2xvciI6IjAwMDAwMCIsImxhbmciOiJlbiIsInR5cGUiOiJhIiwiY2FudmFzX2lkIjoiY2FudmFzX3R0NjE0YzEzYWExYWQ0MCJ9" title="time at "+id='loc' target="_blank" rel="nofollow"><p id='loc'></p></a></td></tr>
+  </table>
+  <h4>Your TimeZone:</h4><p id ='realLoc'></p>
+</center>
+<script type="text/javascript" src="//w.24timezones.com/l.js" async></script>
+<script>
+	const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+	document.getElementById('loc').innerHTML = tz.split('/')[1];
+	document.getElementById('realLoc').innerHTML = "[ "+tz+" ]";
+</script>
   </body>
 </html>

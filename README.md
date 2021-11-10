@@ -1,2 +1,3 @@
-# devinstr.github.io
-My Website: https://devinstr.tech
+# devinofficial.github.io
+Website: https://devin-dev.xyz
+Portfolio: https://devinstr.tech

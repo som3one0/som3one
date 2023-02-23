@@ -1,3 +1,2 @@
-# devinofficial.github.io
-- Website: https://devin-dev.xyz
-<!-- - Portfolio: https://devinstr.tech -->
+# vinndev.github.io
+My [github pages](https://vinndev.github.io)

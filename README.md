@@ -1,2 +1,2 @@
 # vinndev.github.io
-My [github pages](https://vinndev.github.io)
+My [GitHub Pages](https://vinndev.github.io)
